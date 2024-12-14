@@ -4,31 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="head">
-        <!-- <img class="logo" src="./picture/logo.png" alt="" /> -->
-        <h1>Ottawa Carplay Installer</h1>
-        <li>Mobile everywhere</li>
+        <div class="head">
+          <img class="logo" src="./picture/logo_wider.png" alt="" />
+          <h1>Ottawa Carplay Installer</h1>
+          <li>Mobile everywhere</li>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+          <ul class="right">
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
-        <ul class="right">
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
     </header>
     <section>
       <main class="m1">
@@ -67,8 +65,8 @@
           <img src="./picture/sampel.png" alt="" class="sample" />
         </div>
       </main>
+      <h2 class="faq">Frequently Asked Questions</h2>
       <main class="m3">
-        <h2>Frequently Asked Questions</h2>
         <div class="faq1">
           <h3>
             What types of cars can you install CarPlay or Android Auto in?
@@ -94,13 +92,13 @@
           </p>
         </div>
       </main>
-      <main>
+      <!-- <main>
         <h2>Testimonials</h2>
       </main>
       <footer>
-        <!-- icons here with ig, here put locations he operates in  -->
-        <p>© 2021 Ottawa Carplay Installer. All rights reserved.</p>
-      </footer>
+     icons here with ig, here put locations he operates in  -->
+      <!-- <p>© 2021 Ottawa Carplay Installer. All rights reserved.</p>
+      </footer> -->
     </section>
   </body>
 
@@ -109,17 +107,37 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: "Roboto", serif;
-      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
     }
-    body {
-      padding: 2rem;
-    }
+    header {
+  background-color:black; 
+}
+
+/* background colors  */
+header{
+  width: 100%;
+  padding: 0;
+}
+
+
+/* background colors */
     header .head {
       display: flex;
-      justify-content: space-around;
-      margin-top: 2rem;
+    }
+    header .head li {
+      display: flex;
+      justify-content: flex-end;
+    }
+    header .head h1, header .head li {
+      padding-top: 3rem;
+    }
+    header .head h1{
+      padding-left: 3rem;
+      width: 50%;
+    }
+    section main {
+      padding: 2rem;
     }
     .head input {
       width: 25rem;
@@ -133,15 +151,23 @@
       justify-content: space-around;
       float: left;
       width: 50%;
-    }
+      background-color: black;
+      padding-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: normal;
+      font-style: normal;
+      gap: 0.5rem;
+  }
     nav {
-      margin-top: 1.5rem;
+      padding-top: 1.5rem;
     }
     nav .right {
       width: 50%;
       display: flex;
-      justify-content: flex-end;
-      margin-left: -2rem;
+      padding-left: 26rem;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.1rem;
     }
 
     nav ul li {
@@ -150,13 +176,13 @@
     nav ul li a {
       text-decoration: none;
       color: black;
+      margin-right: 0;
     }
 
     .hondeezy {
-      width: 100;
+      width: 90%;
     }
     section .m1 {
-      margin-top: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -164,10 +190,19 @@
       float: left;
       gap: 1.5rem;
       clear: both;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+
     }
 
     section .m1 h2 + p {
-      width: 70%;
+      width: 60%;
+      font-size: 1.5rem;
+     line-height: rem;
+
     }
     section .m1 {
       width: 100%;
@@ -181,6 +216,7 @@
       padding-top: 2.4rem;
       display: flex;
       justify-content: center;
+      background: grey;
     }
     .m2 h2 {
       padding-top: 2rem;
@@ -197,21 +233,42 @@
       list-style: none;
       padding-top: 1.5rem;
     }
-    .m3 {
+    .m3 h3,
+    .m3 p {
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+      padding-top: 1rem;
+      flex-direction: column;
+      padding-left: 6rem;
+      width: 90%;
+    }
+
+    section .m3 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    .m3 p{
+      line-height:1.5rem; 
+    }
+    .faq {
+      padding-top: 2rem;
       display: flex;
       justify-content: center;
     }
-    .faq1,
-    .faq2,
-    .faq3 {
-      display: flex;
-      justify-content: space-around;
-      flex-direction: row;
+    .logo{
+      margin: 0;
+      padding: 0;
+      padding-top: 1.5rem;
+      box-sizing: border-box;
+      width: 10rem;
     }
+   
     /* @media (min-width: 768px) {
-  body {
-    padding: 4rem;
-  }
-} */
+      body {
+        padding: 4rem;
+      }
+    } */
   </style>
 </html>
