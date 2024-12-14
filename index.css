@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+header {
+  background-color: black;
+  clear: both;
+  width: 100%;
+}
+
+.hondeezy {
+  width: 90%;
+}
+section .m1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  gap: 1.5rem;
+  clear: both;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 35%;
+}
+
+section .m1 h2 + p {
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: rem;
+}
+section .m1 {
+  width: 100%;
+}
+.hondeezy {
+  height: 80%;
+}
+.m2 {
+  clear: both;
+  padding: 2rem;
+  padding-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  background: grey;
+}
+.m2 h2 {
+  padding-top: 2rem;
+}
+.msec1 {
+  float: left;
+  width: 40%;
+}
+.msec2 {
+  float: left;
+  width: 50%;
+}
+.msec1 li {
+  list-style: none;
+  padding-top: 1.5rem;
+}
+.m3 h3,
+.m3 p {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  flex-direction: column;
+  padding-left: 6rem;
+  width: 90%;
+}
+
+section .m3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.m3 p {
+  line-height: 1.5rem;
+}
+.faq {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+  padding-top: 1.5rem;
+  box-sizing: border-box;
+  width: 10rem;
+}
+
+/* testimonials */
+/* .card{
+  
+  border:none;
+} */
+
+.user-content p {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.ratings i {
+  color: blue;
+}
+.Testimonials {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+/* testimonials */
+
+/* @media (min-width: 768px) {
+    body {
+      padding: 4rem;
+    }
+  } */
