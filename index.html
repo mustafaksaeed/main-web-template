@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <!-- <img class="logo" src="./picture/logo.png" alt="" /> -->
+        <h1>Ottawa Carplay Installer</h1>
+        <li>Mobile everywhere</li>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <main class="m1">
+        <p>Can't find what you need? Call us.</p>
+        <h2>Ottawa's Car Audio Experts</h2>
+        <p>
+          Discover your local small business gem, offering premium service and
+          specializing in custom jobs. Whether it's car audio, marine audio,
+          motorcycles, or any unique project, we're here to deliver excellence
+          tailored to your needs.
+        </p>
+        <button>Text Us: 343-254-4630</button>
+        <img src="./picture/hondeezy.png" alt="" class="hondeezy" />
+      </main>
+      <br />
+      <main class="m2">
+        <div class="msec1">
+          <h2>Why choose us?</h2>
+          <ul>
+            <li>
+              📲 Convenient communication: Text us at 343-254-4630 for fast
+              responses.
+            </li>
+            <li>
+              🚗 Expertise in CarPlay & Android Auto installation for any car.
+            </li>
+            <li>
+              📍 Serving Ottawa, Gatineau, and Montreal for your automotive
+              needs.
+            </li>
+            <li>✉️ Easy booking: DM us for quick info and scheduling.</li>
+            <li>💰 Competitive pricing with the best deals in the market!</li>
+          </ul>
+        </div>
+        <div class="msec2">
+          <img src="./picture/sampel.png" alt="" class="sample" />
+        </div>
+      </main>
+      <main class="m3">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq1">
+          <h3>
+            What types of cars can you install CarPlay or Android Auto in?
+          </h3>
+          <p>
+            We can install CarPlay and Android Auto in virtually any car.
+            Contact us to confirm compatibility with your vehicle!
+          </p>
+        </div>
+        <div class="faq2">
+          <h3>How long does the installation process take?</h3>
+          <p>
+            Installation typically takes a few hours, depending on the car and
+            system. We'll provide an estimated time during booking.
+          </p>
+        </div>
+        <div class="faq3">
+          <h3>What are the benefits of CarPlay and Android Auto?</h3>
+          <p>
+            CarPlay and Android Auto allow you to access your phone's features
+            safely while driving. Enjoy hands-free calling, messaging, music,
+            and navigation with voice commands.
+          </p>
+        </div>
+      </main>
+      <main>
+        <h2>Testimonials</h2>
+      </main>
+      <footer>
+        <!-- icons here with ig, here put locations he operates in  -->
+        <p>© 2021 Ottawa Carplay Installer. All rights reserved.</p>
+      </footer>
+    </section>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    body {
+      padding: 2rem;
+    }
+    header .head {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+    .head input {
+      width: 25rem;
+      height: 2rem;
+    }
+    .head li {
+      list-style: none;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      float: left;
+      width: 50%;
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav .right {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      margin-left: -2rem;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .hondeezy {
+      width: 100;
+    }
+    section .m1 {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      gap: 1.5rem;
+      clear: both;
+    }
+
+    section .m1 h2 + p {
+      width: 70%;
+    }
+    section .m1 {
+      width: 100%;
+    }
+    .hondeezy {
+      height: 80%;
+    }
+    .m2 {
+      clear: both;
+      padding: 2rem;
+      padding-top: 2.4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .m2 h2 {
+      padding-top: 2rem;
+    }
+    .msec1 {
+      float: left;
+      width: 40%;
+    }
+    .msec2 {
+      float: left;
+      width: 50%;
+    }
+    .msec1 li {
+      list-style: none;
+      padding-top: 1.5rem;
+    }
+    .m3 {
+      display: flex;
+      justify-content: center;
+    }
+    .faq1,
+    .faq2,
+    .faq3 {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    /* @media (min-width: 768px) {
+  body {
+    padding: 4rem;
+  }
+} */
+  </style>
+</html>
