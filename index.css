@@ -10,7 +10,12 @@ header {
   clear: both;
   width: 100%;
 }
-
+.navbar {
+  padding: 2rem;
+}
+.nav-item {
+  margin: 0 1.5rem; /* Adjust the margin as needed */
+}
 .hondeezy {
   width: 90%;
 }
@@ -114,6 +119,9 @@ section .m3 {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+}
+.ratings svg {
+  fill: gold; /* Original color */
 }
 
 /* testimonials */
